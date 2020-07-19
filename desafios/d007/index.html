@@ -3,14 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <title>Challenge #7</title>
+    <style>
+        body {
+            max-width: 1200px;
+            min-width: 200px;
+            background-color: tomato;
+        }     
+    </style>
 </head>
 <body>
-    <h1>Imagem flexível</h1>
-    <p>
-        Você está vendo a imagem completa? Experimente ampliar o tamanho da sua janela para aproveitar a melhor experiência.
-    </p>
-    <img src="" alt="">
+    <h1>Imagens flexível</h1>
+    <p>Altere as dimensões da janela do navegador e veja as dimensões da imagem sendo alteradas</p>
+    <picture>
+        <source media="(min-width:1000px)" srcset="balloon-1000px.jpg">
+        <source media="(min-width:750px)" srcset="balloon-800px.jpg">
+        <source media="(min-width:590px)" srcset="balloon-400px.jpg">
+        <source media="(min-width:350px)" srcset="balloon-200px.jpg">
+        <img src="balloon-200px.jpg" alt="balloon" style="width:auto;">
+    </picture>
 </body>
 </html>

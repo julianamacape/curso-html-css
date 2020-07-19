@@ -1,0 +1,11 @@
+body {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: white;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100&;
+}
