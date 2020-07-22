@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outras Formatações</title>
+</head>
+<body>
+    <h1>Outras Formatações</h1>
+    <h2>Código-fonte</h2>
+    <p>
+        O comando <code><mark style="background-color:rgb(196, 193, 193);">document.getElementById('teste')</mark></code> é escrito em linguagem JavaScript. <br> Utilizamos a tag &lt;code&gt; nesse trecho para transformar a formatação em <strong>fonte monoespaçada</strong>.
+    </p>
+            <pre>
+                <code>
+                num = int(input('Digite um número inteiro'))
+                if num % 2 == 0:
+                    print(f'O número {num} é PAR)
+                else:
+                    print (f'O número {num} é ÍMPAR)
+                </code>
+            </pre>
+    <p>
+        Para deixar o código acima organizado, com identação, usamos a tag &lt;pre&gt;. <br>E para mudar a tabulação para a direita ou esquerda, você deve selecionar o trecho desejado e apartar a tecla TAB (tabulação vai para a direita) ou Shift+TAB (tabulação vai para a esquerda)
+    </p>
+                                            <pre>
+                                                <code>
+                                                num = int(input('Digite um número inteiro'))
+                                                if num % 2 == 0:
+                                                    print(f'O número {num} é PAR)
+                                                else:
+                                                    print (f'O número {num} é ÍMPAR)
+                                                </code>
+                                            </pre>
+<pre>
+    <code>
+    num = int(input('Digite um número inteiro'))
+    if num % 2 == 0:
+        print(f'O número {num} é PAR)
+    else:
+        print (f'O número {num} é ÍMPAR)
+    </code>
+</pre>
+<h2>Citações</h2>
+<p>
+    Como diria um amigo meu: <q><em>camarão que dorme acorda na empada</em></q>. <br>Para criar essas aspas, utilizamos a tag &lt;q&gt;.
+</p>
+<h2>Citações completas</h2>
+<p>
+    Segundo Machado de Assis, no seu livro Memórias Póstumas de Brás Cubas:
+</p>
+<blockquote cite="https://books.google.com.br/books?id=8bdcAAAAQBAJ&printsec=frontcover&dq=machado+de+assis&hl=en&sa=X&ved=2ahUKEwjWxZrw5uDqAhXKLLkGHYERD9MQ6AEwCHoECAcQAg#v=onepage&q=machado%20de%20assis&f=false">
+    Vós, que o conhecestes, meus senhores, vós podeis dizer comigo que a natureza parece estar chorando a perda irreparável de um dos mais belo caracteres que têm honrado a humanidade.
+</blockquote>
+<p>
+    Perceba que o trecho acima em citação foi automaticamente identado para a direita. Para isso, utilizamos a tag &lt;blockquote&gt;. <br> Ao escrever o códio, adicionamos o atributo "cite" dentro da tag de abertura &lt;blockquote&gt; e inserimos a URL de onde veio a citação de Machado de Assis. Isso apenas afeta os mescanismos de busca do Google.
+</p>
+<h2>Abreviações (na verdade, é siglas)</h2>
+<p>Estou estudando <abbr title="Hypertext Markup Language">HTML</abbr> e <abbr title="Cascading Style SHeets">CSS</abbr> com o Estudonauta. Estou amando a experiência. As siglas HTML e CSS significam respectivamente <em>Hypertext Markup Language</em> e <em>Cascade Style Sheets</em> e se você repousar o mouse sobre essas siglas, esses nomes irão aparecer.</p>
+</body>
+<h2>Texto invertido</h2>
+<p>
+    <bdo dir="rtl">Esse texto está invertido</bdo>. Usamos a tag &lt;bdo&gt; para inverter textos.
+</p>
+</html>
