@@ -9,5 +9,293 @@
 <body>
     <h1>Trabalhando com listas</h1>
     <h2>Listas ordenadas</h2>
+    <p>
+        Para criar listas ordenadas (com números) utilizamos a tag &lt;ol&gt; e dentro dela utilizamos a tag &lt;li&gt;, que é a tag que se encarrega de organizar a numeração. <br> Veja o exemplo abaixo:
+        <ol>
+            <li>
+                7h30 levantar
+            </li>
+            <li>
+                8h estudar
+            </li>
+            <li>
+                10h iniciar trabalho
+            </li>
+            <li>
+                15h aula Teens
+            </li>
+            <li>
+                16h30 aula regular (tarde)
+            </li>
+            <li>
+                18h45 aula regular (noite)
+            </li>
+        </ol>
+    </p>
+    <p>
+        Digamos que eu tenha esquecido de inserir a atividade "13h almoçar". Basta incluir essa atividade (dentro da tag &lt;ol&gt; já aberta) utilizando a tag &lt;li&gt;. <br> Você verá que a própria tag &lt;li&gt; se encarrega de atualizar a numeração. Vai ficar assim:
+    </p>
+    <ol>
+        <li>
+            7h30 levantar
+        </li>
+        <li>
+            8h estudar
+        </li>
+        <li>
+            10h iniciar trabalho
+        </li>
+        <li>
+            13h almoçar
+        </li>
+        <li>
+            15h aula Teens
+        </li>
+        <li>
+            16h30 aula regular (tarde)
+        </li>
+        <li>
+            18h45 aula regular (noite)
+        </li>
+    </ol>
+    <p>
+        É possível escolher outros tipos de numeradores. Para isso, utilizamos o parâmetro &lt;type&gt; dentro da tag &lt;ol&gt; de abertura: <br> <code><mark style="background-color: rgb(192, 190, 190);">&lt;ol type="nmr"&gt;</mark></code>
+    </p>
+    <h3>Tipo 1</h3>
+    <ol type="1">
+        <li>
+            7h30 levantar
+        </li>
+        <li>
+            8h estudar
+        </li>
+        <li>
+            10h iniciar trabalho
+        </li>
+        <li>
+            13h almoçar
+        </li>
+        <li>
+            15h aula Teens
+        </li>
+        <li>
+            16h30 aula regular (tarde)
+        </li>
+        <li>
+            18h45 aula regular (noite)
+        </li>
+    </ol>
+    <h3>Tipo A</h3>
+    <ol type="A">
+        <li>
+            7h30 levantar
+        </li>
+        <li>
+            8h estudar
+        </li>
+        <li>
+            10h iniciar trabalho
+        </li>
+        <li>
+            13h almoçar
+        </li>
+        <li>
+            15h aula Teens
+        </li>
+        <li>
+            16h30 aula regular (tarde)
+        </li>
+        <li>
+            18h45 aula regular (noite)
+        </li>
+    </ol>
+    <h3>Tipo a</h3>
+    <ol type="a">
+        <li>
+            7h30 levantar
+        </li>
+        <li>
+            8h estudar
+        </li>
+        <li>
+            10h iniciar trabalho
+        </li>
+        <li>
+            13h almoçar
+        </li>
+        <li>
+            15h aula Teens
+        </li>
+        <li>
+            16h30 aula regular (tarde)
+        </li>
+        <li>
+            18h45 aula regular (noite)
+        </li>
+    </ol>
+    <h3>Tipo I</h3>
+    <ol type="I">
+        <li>
+            7h30 levantar
+        </li>
+        <li>
+            8h estudar
+        </li>
+        <li>
+            10h iniciar trabalho
+        </li>
+        <li>
+            13h almoçar
+        </li>
+        <li>
+            15h aula Teens
+        </li>
+        <li>
+            16h30 aula regular (tarde)
+        </li>
+        <li>
+            18h45 aula regular (noite)
+        </li>
+    </ol>
+    <h3>Tipo i</h3>
+    <ol type="i">
+        <li>
+            7h30 levantar
+        </li>
+        <li>
+            8h estudar
+        </li>
+        <li>
+            10h iniciar trabalho
+        </li>
+        <li>
+            13h almoçar
+        </li>
+        <li>
+            15h aula Teens
+        </li>
+        <li>
+            16h30 aula regular (tarde)
+        </li>
+        <li>
+            18h45 aula regular (noite)
+        </li>
+    </ol>
+    <p>
+        Você pode definir a partir de qual número ou letra a contagem inicia. Para isso, utilize o parâmetro <code><mark style="background-color: rgb(196, 194, 194);">&lt;start="..."&gt;</mark></code>
+    </p>
+    <ol type="1" start="4">
+        <li>
+            7h30 levantar
+        </li>
+        <li>
+            8h estudar
+        </li>
+        <li>
+            10h iniciar trabalho
+        </li>
+        <li>
+            13h almoçar
+        </li>
+        <li>
+            15h aula Teens
+        </li>
+        <li>
+            16h30 aula regular (tarde)
+        </li>
+        <li>
+            18h45 aula regular (noite)
+        </li>
+    </ol>
+    <ol type="i" start="3">
+        <li>
+            7h30 levantar
+        </li>
+        <li>
+            8h estudar
+        </li>
+        <li>
+            10h iniciar trabalho
+        </li>
+        <li>
+            13h almoçar
+        </li>
+        <li>
+            15h aula Teens
+        </li>
+        <li>
+            16h30 aula regular (tarde)
+        </li>
+        <li>
+            18h45 aula regular (noite)
+        </li>
+    </ol>
+    <ol type="A" start="6">
+        <li>
+            7h30 levantar
+        </li>
+        <li>
+            8h estudar
+        </li>
+        <li>
+            10h iniciar trabalho
+        </li>
+        <li>
+            13h almoçar
+        </li>
+        <li>
+            15h aula Teens
+        </li>
+        <li>
+            16h30 aula regular (tarde)
+        </li>
+        <li>
+            18h45 aula regular (noite)
+        </li>
+    </ol>
+    <h2>Listas Não Ordenadas</h2>
+    <p>
+        Essas listas usam marcadores que não indicam uma sequência. Usamos a tag &lt;ul&gt; e dentro dela usamos a tag &lt;li&gt; para indicar os itens da lista.
+    </p>
+    <ul>
+        <li>7h30 levantar</li>
+        <li>8h estudar</li>
+        <li>10h iniciar trabalho</li>
+        <li>13h almoçar</li>
+        <li>15h aula Teens</li>
+        <li>16h30 aula regular (tarde)</li>
+        <li>18h45 aula regular (noite)</li>
+    </ul>
+    Também é possível mudar a formatação do marcador usando o parâmetro "type" dentro da tag &lt;ul&gt; assim: <code><mark style="background-color: rgb(190, 184, 184);">&lt;ul type="..."&gt;</mark></code>
+    <h3>Tipo "disc"</h3>
+    <ul type="disc">
+        <li>7h30 levantar</li>
+        <li>8h estudar</li>
+        <li>10h iniciar trabalho</li>
+        <li>13h almoçar</li>
+        <li>15h aula Teens</li>
+        <li>16h30 aula regular (tarde)</li>
+        <li>18h45 aula regular (noite)</li>
+    </ul>
+    <h3>Tipo "circle"</h3>
+    <ul type="circle">
+        <li>7h30 levantar</li>
+        <li>8h estudar</li>
+        <li>10h iniciar trabalho</li>
+        <li>13h almoçar</li>
+        <li>15h aula Teens</li>
+        <li>16h30 aula regular (tarde)</li>
+        <li>18h45 aula regular (noite)</li>
+    </ul>
+    <h3>Tipo "quare"</h3>
+    <ul type="square">
+        <li>7h30 levantar</li>
+        <li>8h estudar</li>
+        <li>10h iniciar trabalho</li>
+        <li>13h almoçar</li>
+        <li>15h aula Teens</li>
+        <li>16h30 aula regular (tarde)</li>
+        <li>18h45 aula regular (noite)</li>
+    </ul>
 </body>
 </html>
