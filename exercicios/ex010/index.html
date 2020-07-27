@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links em HTML5</title>
+    <link rel="shortcut icon" href="labrador.ico" type="image/x-icon">
+</head>
+<body>
+    <h1>Usando links externos</h1>
+    <p>Para disponibilizar links externos utilizamos a tag <code><mark style="background-color: rgb(197, 194, 194) ;">&lt;a&gt;</mark></code>. Dentro do parâmetro "href=" nós inserimos a URL completa da página que será o destino do usuário quando ele clicar no seu link. E dentro dos sinais &gt; &lt; devemos inserir o trecho do texto que representará o link.
+    </p>
+    <pre>
+        <code>&lt;a href="<em>aqui dentro a URL completa</em>"&gt;<em>aqui dentro o trecho do texto que carrega o link</em>&lt;/a></code>
+        
+    </pre>
+    <p>
+        Exemplo: Você pode acessar o meu repositório público no GitHub clicando <a href="https://github.com/julianamacape">AQUI</a>.
+    </p>
+    <p>
+        Perceba que ao clicar no link "AQUI" o usuário é levado a outra página e o navegador utiliza-se da mesma aba já aberta, ou seja, o site em que o usuário estava fica pra trás. Se você quiser que o link leve o usuário para o site de destino abrindo uma outra aba, então utilize os parâmetros <code>target="_blank" rel="external"</code>
+    </p>
+    <p>
+        Exemplo: Você pode acessar o meu repositório público no GitHub clicando <a href="https://github.com/julianamacape" target="_blank" rel="external">AQUI</a>.
+    </p>
+</body>
+</html>
