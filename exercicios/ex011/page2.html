@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>
+        Então a primeira coisa que fazemos é abrir a tag &lt;picture&gt; e inserir uma imagem que ocupará todo o espaço da tela. Veja o exemplo abaixo:
+        <pre>
+            <code>
+                &lt;picture&gt;
+                    &lt;img src="images/pessoa-de-costas.jpg" alt="mulherdecostas"&gt;
+                &lt;/picture&gt;
+            </code>
+        </pre>
+        Em seguida iremos inserir algumas versões da mesma imagem através dos atributos "source media", "srcset" e "type" <strong>acima</strong> do parâmetro "img". Veja os exemplos abaixo:
+        <pre>
+            <code>
+                &lt;picture&gt;
+                    &lt;source media="(max-width: 600px)" srcset="images/pessoa-de-costas300.jpg" type="image/jpg"&gt;
+                    &lt;source media="(max-width: 1000px)" srcset="images/pessoa-de-costas600.jpg" type="image/jpg"&gt;
+                    &lt;img src="images/pessoa-de-costas.jpg" alt="mulherdecostas"&gt;
+                &lt;/picture&gt;
+            </code>
+        </pre>
+        Sacou? <br> Agora volta pra <a href="../ex011/index.html" rel="prev">página inicial</a> e verifica o resultado.
+    </p>
+</body>
+</html>
