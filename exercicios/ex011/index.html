@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens dinâmicas</title>
+    <link rel="shortcut icon" href="labrador.ico" type="image/x-icon">
+</head>
+<body>
+    <h1>Imagens Responsivas</h1>
+    <p>
+        Perceba como o tamanho da imagem muda à medida que você estreita ou alarga a janela do seu navegador.
+    </p>
+    <picture>
+        <source media="(max-width: 600px)" srcset="images/pessoa-de-costas300.jpg" type="image/jpg">
+        <source media="(max-width: 1000px)" srcset="images/pessoa-de-costas600.jpg" type="image/jpg">
+        <img src="images/pessoa-de-costas.jpg" alt="mulherdecostas">
+    </picture>
+</body>
+</html>
