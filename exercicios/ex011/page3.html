@@ -9,13 +9,23 @@
     <a href="./index.html" rel="prev">Voltar</a> para a página inicial.
     <h1>Elemento áudio</h1>
     <p>
-        Vamos aprender a reproduzir audios em HTML5. Utilizaremos a tag &lt;audio&gt;. O processo é bastante parecido com o de inserção de imagem.
+        Vamos aprender a reproduzir audios em HTML5. Utilizaremos a tag &lt;audio&gt;.
         <pre>
             <code>
-                &lt;audio src="media/melody.mp3" autoplay loop>&lt;/audio>
+                &lt;audio preload="metadata" autoplay loop>
+                    &lt;source src="./media/anchors.mp3" type="audio/mpeg">
+                    &lt;source src="./media/anchors.ogg" type="audio/ogg">
+                    &lt;source src="./media/anchors.wav" type="audio/wav">
+                    &lt;p>Se seu navegador não suporta áudio &lt;a href="./media/anchors.mp3" download="./media/anchors.mp3" type="audio/mpeg">&lt;/a>&lt;/p>
+                &lt;/audio>
             </code>
         </pre>
-        <audio src="./media/melody.mp3"></audio>
+        <audio preload="metadata" autoplay loop>
+            <source src="./media/anchors.mp3" type="audio/mpeg">
+            <source src="./media/anchors.ogg" type="audio/ogg">
+            <source src="./media/anchors.wav" type="audio/wav">
+            <p>Se seu navegador não suporta áudio <a href="./media/anchors.mp3" download="./media/anchors.mp3" type="audio/mpeg"></a></p>
+        </audio>
         Pelo fato de termos incluído o parâmetro "autoplay" perceba que ao entrar na página o áudio já começa a tocar, mesmo sem o usuário ter apertado em nenhum botão de <em>Play</em>. <br> Perceba também que o áudio fica tocando repetidas vezes como que num "loop", e foi exatamente esse parâmetro que fez com que isso acontecesse.
     </p>
     <p>

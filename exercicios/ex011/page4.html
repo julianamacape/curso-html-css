@@ -15,11 +15,21 @@
         Vamos inserir um áudio no nosso site e daremos ao usuário a opção de apertar Play ou Pause inserindo os controles.
         <pre>
             <code>
-                &lt;audio src="media/anchors.mp3" controls>&lt;/audio>
+                &lt;audio preload="metadata" controls>
+                    &lt;source src="./media/anchors.mp3" type="audio/mpeg">
+                    &lt;source src="./media/anchors.ogg" type="audio/ogg">
+                    &lt;source src="./media/anchors.wav" type="audio/wav">
+                    &lt;p>Se seu navegador não suporta áudio &lt;a href="./media/anchors.mp3" download="./media/anchors.mp3" type="audio/mpeg">&lt;/a>&lt;/p>
+                &lt;/audio>
             </code>
         </pre>
-        <audio src="./media/anchors.mp3" controls></audio>
-        <br> Para explicações sobre outras maneiras de inserir áudio em HTML5, clique na <a href="./page5.html" rel="next">página seguinte</a>.
+        <audio preload="metadata" controls>
+            <source src="./media/anchors.mp3" type="audio/mpeg">
+            <source src="./media/anchors.ogg" type="audio/ogg">
+            <source src="./media/anchors.wav" type="audio/wav">
+            <p>Se seu navegador não suporta áudio <a href="./media/anchors.mp3" download="./media/anchors.mp3" type="audio/mpeg"></a></p>
+        </audio>
+        <br> Perceba que os parâmetros "autoplay" e "loop" foram retirados e, no lugar, inserimos o parâmetro "controls"
     </p>
 </body>
 </html>
