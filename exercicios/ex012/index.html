@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elemento Vídeo</title>
+    <link rel="shortcut icon" href="labrador.ico" type="image/x-icon">
+</head>
+<body>
+    <h1>Elemento Vídeo</h1>
+    <h2>Vídeos de Hospedagem Local</h2>
+    <p>
+        É importante mencionar que esse tipo de hospedagem pode sair caro uma vez que pro usuário assistir esse vídeo (dependendo se esse vídeo for muito pesado) vai requerer muita banda do seu servidor. <br> Usaremos a tag &lt;video&gt;
+        <pre>
+            <code>
+                    &lt;video width="500" poster="images/dog-thumb.jpg" controls>
+                        &lt;source src="videos/dog.mp4" type="video/mp4">
+                        &lt;source src="videos/dog.ogv" type="video/ogv">
+                        &lt;source src="videos/dog.webm" type="video/webm">
+                        &lt;p>Infelizmente o seu navegador não suporta vídeos&lt;/p>
+                    &lt;/video>
+            </code>
+        </pre>
+        <video width="500" poster="images/dog-thumb.jpg" controls>
+            <source src="videos/dog.mp4" type="video/mp4">
+            <source src="videos/dog.ogv" type="video/ogv">
+            <source src="videos/dog.webm" type="video/webm">
+            <p>Infelizmente o seu navegador não suporta vídeos</p>
+        </video>
+    </p>
+    <p>
+        É importanque sejam disponibilizados mais de um formato do mesmo vídeo em função das possibilidades de navegadores que os usuários utilizam.
+    </p>
+</body>
+</html>
