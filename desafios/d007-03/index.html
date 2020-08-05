@@ -8,5 +8,14 @@
 </head>
 <body>
     <h1>Imagens flexíveis</h1>
+    <p>
+        Perceba que ao estreitar ou alargar a janela do seu navegador (exceto se for Safari), as dimensões da imagem são alteradas e se adequam ao tamanho do navegador.
+    </p>
+    <picture>
+        <source media="(max-width: 400px)" srcset="images/mulher400px.jpg" type="image/jpg">
+        <source media="(max-width: 600px)" srcset="images/mulher600px.jpg" type="image/jpg">
+        <source media="(max-width: 900px )" srcset="images/mulher900px.jpg" type="image/jpg">
+        <img src="mulher.jpg" alt="mulher">
+    </picture>
 </body>
 </html>
