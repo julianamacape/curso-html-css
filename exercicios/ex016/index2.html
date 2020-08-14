@@ -5,12 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cores em CSS</title>
     <link rel="shortcut icon" href="my-favicon.ico" type="image/x-icon">
-    <style>
-        body {
-            background-image: linear-gradient(to right, green, brown);
-            background-attachment: fixed;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
+    
 </head>
 <body>
     <h1>Testando gradientes (degradê) em CSS</h1>
@@ -39,5 +35,21 @@
             </li>
         </ul>
     </p>
+    <p>
+        O problema é que se você escolher a direção do degradê "to top" ou "to bottom" corre o risco de o background ficar meio "zebrado", como a imagem abaixo:
+    </p>
+    <img src="degradê-zebra.png" alt="degradezebra">
+    <p>
+        Nesse caso, faz-se necessária a seguinte configuração no seu código:
+    </p>
+    <pre>
+        <code>
+            &lt;style>
+                * {
+                    height: 100%;
+                }
+            &lt;/style>
+        </code>
+    </pre>
 </body>
 </html>
