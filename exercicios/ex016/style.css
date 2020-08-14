@@ -1,4 +1,4 @@
 @charset "UTF-8";
 body {
-    background-image: linear-gradient(to right, pink, cyan);
+    background-image: linear-gradient(to right, pink 80%, cyan);
 }
