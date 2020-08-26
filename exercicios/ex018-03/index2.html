@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipografia</title>
+    <link rel="shortcut icon" href="my-favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <h1>Tipografia (part 2)</h1>
+    <h2>Família de Fontes</h2>
+    <p>
+        Ao declarar a fonte em CSS é importante inserir uma combinação de mais de 1 fonte. Chamamos isso de "<strong>safe combination</strong>". Isso porque se o navegador de um dispositivo não reconhecer uma fonte, ele tenta a próxima.
+    </p>
+    <pre>
+        <code>
+            &lt;style>
+                body {
+                    font-family: Verdana, Geneva, Tahoma, sans-serif;
+                                 Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+                                 Georgia, 'Times New Roman', Times, serif
+                                 etc...
+                }
+            &lt;/style>
+        </code>
+    </pre>
+    <p>
+        Pesquise no Google " <a href="https://www.google.com/search?q=CSS+web+safe+font+combinations&rlz=1C5CHFA_enES876ES876&oq=CSS+web+safe+font+combinations&aqs=chrome..69i57.447j0j7&sourceid=chrome&ie=UTF-8" rel="dofollow" target="_blank"><em>CSS web safe font combinations</em></a>" e acesse o resultado da <strong>W3Schools</strong> <br> <img src="font-combinations.png" alt="font-combinations">
+    </p>
+    <p>
+        Também é possível, ao escolher a família de fontes, declarar um parâmetro genérico, tipo "serif". É como dizer ao navegador "<em>Escolhe qualquer fonte aí, contanto que seja com serifa</em>", e de fato, a escolha da fonte ficará a cargo do navegador.
+        <pre>
+            <code>
+                &lt;style>
+                    body {
+                        font-family: serif;
+                                     sans-serif;
+                                     monospace;
+                                     etc...
+                    }
+                &lt;/style>
+            </code>
+        </pre>
+    </p>
+</body>
+</html>
