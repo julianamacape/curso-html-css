@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipografia</title>
+    <link rel="shortcut icon" href="my-favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <h1>Tipografia (parte 2)</h1>
+    <h2>Tamanhos de Fontes</h2>
+    <p>
+        Recomenda-se seguir as orientações da W3School, ou seja, usar "px" e "em"
+    </p>
+    <p>
+        <h3>Medidas Absolutas</h3>
+        <ul>
+            <li><abbr title="centímetros">cm</abbr></li>
+            <li><abbr title="milímetros">mm</abbr></li>
+            <li><abbr title="polegadas">in</abbr></li>
+            <li><abbr title="pontos">pt</abbr></li>
+            <li><abbr title="pixels">px</abbr></li>
+            <li><abbr title="pica">pc</abbr></li>
+        </ul>
+<pre>
+    <code>
+        &lt;style>
+            p {
+                font-size:  2cm;
+                            10mm;
+                            3in;
+                            18pt;
+                            9px;
+                            12pc;
+            }
+        &lt;/style>
+    </code>
+</pre>
+        <strong>pt</strong> e <strong>pc</strong> não são recomendadas para telas, somente para impressão.
+    </p>
+    <p>
+        <h3>Medidas Relativas</h3>
+        <ul>
+            <li><abbr title="relativo à altura 'M' maiúscula de uma fonte">em</abbr></li>
+            <li><abbr title="relativo à altura 'x' minúsculo de uma fonte">ex</abbr></li>
+            <li><abbr title="relativo à 'root', ou seja, à fonte configurada no 'body'">rem</abbr></li>
+            <li><abbr title="relativo à largura do 'viewport'">vw</abbr></li>
+            <li><abbr title="relativo à altura do 'viewport'">vh</abbr></li>
+            <li><abbr title="porcentagem">%</abbr></li>
+        </ul>
+    </p>
+<pre>
+    <code>
+        &lt;style>
+            p {
+                font-size:  1em;
+                            1ex;
+                            1rem;
+                            20vw;
+                            15vh;
+                            40%;
+            }
+        &lt;/style>
+    </code>
+</pre>
+    
+    <p>
+        O tamanho padrão de fonte é 16px = 1em
+    </p>
+    <h2>Peso, Estilo e Shorthand</h2>
+    <h3>Peso</h3>
+    <p>
+        Peso quer dizer a fonta mais larga ou mais estreita
+    </p>
+<pre>
+    <code>
+        &lt;style>
+            p {
+                font-weight: lighter;
+                             normal;
+                             bold;
+                             bolder;
+                             200;
+                             350;
+                             etc
+            }
+        &lt;/style>
+    </code>
+</pre>
+    <p>
+        É possível usar numeração de 100 até 900 para definir o peso da fonte. Lembrando que nem todas as fontes respondem à configuração de font-weight. 
+    </p>
+    <h3>Estilo</h3>
+    <p>
+        Importante lembrar que nem todas as fontes respondem à declaração de 'font-style'
+    </p>
+<pre>
+    <code>
+        &lt;style>
+            p {
+                font-style: italic;
+                            normal;
+                            oblique;
+                            etc...
+            }
+        &lt;/style>
+    </code>
+</pre>
+</body>
+</html>
