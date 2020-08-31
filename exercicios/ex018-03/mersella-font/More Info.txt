@@ -1,0 +1,13 @@
+If you want the full version and license for commercial use,
+you can purchase here :
+
+https://staircaselab.com/product/mersella/
+
+File include : 
+
+1. Mersella.otf
+2. Mersella.ttf
+3. Mersella.woff
+4. Mersella Italic.otf
+5. Mersella Italic.ttf
+6. Mersella Italic.woff
