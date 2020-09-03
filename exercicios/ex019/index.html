@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Id</title>
+    <link rel="shortcut icon" href="my-favicon.ico" type="image/x-icon">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+        h1#personalizado {
+            font-family: 'Press Start 2P', Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Seletores Personalizados</h1>
+    <p>
+        Caso você queira fazer uma declaração personalizada para um determinado seletor, usamos o parâmetro 'id' dentro de uma linha dentro do documento de html.
+    </p>
+    <h1 id="personalizado">Título Teste</h1>
+    <p>
+        Perceba que esse &lt;h1> "Título teste" tem uma formatação diferente do &lt;h1> lá do topo da página. Em tese, ao configuar o seletor &lt;h1> em CSS, todos os títulos &lt;h1> receberiam a mesma formatação. E é assim de fato. Usamos a 'id' em CSS justamente para abrir uma exceção. No texto de html, tivemos que fazer o seguinte: 
+    </p>
+    <pre>
+        <code>
+            &lt;h1 id="personalizado">Título Teste&lt;/h1>
+        </code>
+    </pre>
+    <p>
+        A denominação 'personalizado' foi da minha cabeça. Escolha o termo que quiser. PREFERENCIALMENTE em termo que destaque a função dessa 'id'.
+    </p>
+    <p>
+        E lá em CSS, ficou assim:
+    </p>
+    <pre>
+        <code>
+            &lt;style>
+                @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+        
+                h1#personalizado {
+                    font-family: 'Press Start 2P', Arial, Helvetica, sans-serif;
+                }
+            &lt;/style>
+        </code>
+    </pre>
+    <p>
+        Importante mencionar que escrever o nome do seletor enquanto declarando uma 'id' no arquivo de CSS é opcional. Então também poderia ser:
+    </p>
+    <pre>
+        <code>
+            &lt;style>
+                @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+        
+                #personalizado {
+                    font-family: 'Press Start 2P', Arial, Helvetica, sans-serif;
+                }
+            &lt;/style>
+        </code>
+    </pre>
+</body>
+</html>
