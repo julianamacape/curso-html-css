@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Id & Class</title>
+    <link rel="shortcut icon" href="my-favicon.ico" type="image/x-icon">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Unica+One&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
+        .free {
+            font-family: 'Unica One', Arial, Helvetica, sans-serif;
+        }
+
+        .paid {
+            font-family: 'Fredericka the Great', Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Seletores Personalizados (parte 2)</h1>
+    <p>
+        A regra da <a href="https://www.w3schools.com/css/css_selectors.asp#:~:text=The%20CSS%20id%20Selector,the%20id%20of%20the%20element." rel="dofollow" target="_blank">w3schools</a> é clara: dentro de um documento html, uma 'id' só pode ser usada uma única vez. Pode haver outras 'id', mas cada uma delas só pode usar uma única vez.
+    </p>
+    <p>
+        Quando você quiser aplicar uma determinada formatação de uma 'id' a mais de um elemento, então não é a 'id' que você vai usar; é a 'class'. Veja os exemplos abaixo:
+    </p>
+        <h2 class="free">Top Cursos Gratuitos</h2>
+        <p>
+            <a href="https://www.learncafe.com/cursos-gratis" rel="dofollow" target="_blank">Clique Aqui.</a>
+        </p>
+        <h2 class="paid">Top Cursos Pagos</h2>
+        <p>
+            <a href="https://www.udemy.com/pt/" rel="dofollow" target="_blank">Clique Aqui.</a>
+        </p>
+        <h2 class="free">Top Apps Gratuitos</h2>
+        <p>
+            <a href="https://apps.apple.com/us/story/id1484100916" rel="dofollow" target="_blank">Clique Aqui.</a>
+        </p>
+        <h2 class="paid">Top Apps Pagos</h2>
+        <p>
+            <a href="https://www.fastcompany.com/90438371/these-are-the-best-apps-and-games-of-2019-according-to-apple" rel="dofollow" target="_blank">Clique Aqui.</a>
+        </p>
+        <h2 class="free">Top e-Books Gratuitos</h2>
+        <p>
+            <a href="https://www.amazon.com.br/b?ie=UTF8&node=6311441011" rel="dofollow" target="_blank">Clique Aqui</a>
+        </p>
+        <h2 class="paid">Top e-Books Pagos</h2>
+        <p>
+            <a href="https://www.amazon.com.br/gp/bestsellers/digital-text/5475882011" rel="dofollow" target="_blank">Clique Aqui.</a>
+        </p>
+        <p>
+            Para as categorias gratuitas usamos um tipo de formatação que denominamos class="free", já para as categorias pagas usamos um tipo de formatação que denominamos class="paid". No texto html, ficou assim:
+        </p>
+        <pre>
+            <code>
+                &lt;h2 class="free">Top Cursos Gratuitos&lt;/h2>
+                &lt;h2 class="paid">Top Cursos Pagos&lt;/h2>
+            </code>
+        </pre>
+        <p>
+            E lá no CSS ficou assim:
+        </p>
+        <pre>
+            <code>
+                
+            </code>
+        </pre>
+</body>
+</html>
