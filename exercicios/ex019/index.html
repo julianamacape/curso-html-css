@@ -61,5 +61,41 @@
     <p>
         Vamos agora aprender sobre <a href="css-class.html" rel="next">CSS Class</a>.
     </p>
+    <p>
+        É possível declarar mais de uma classe no seu código html.
+    </p>
+    <pre>
+        <code>
+            &lt;h1 class="nomedaclass01" "nomedaclass02">Título Teste&lt;/h1>
+        </code>
+    </pre>
+    <p>
+        É possível também misturar uma 'id' e uma 'class' no mesmo seletor.
+    </p>
+    <pre>
+        <code>
+            &lt;h1 id="nomedaid" class="nomedaclass">Título Teste&lt;/h1>
+        </code>
+    </pre>
+    <p>
+        Importante mencionar que há uma hierarquia que precisa ser obedecida em CSS. Vai do mais genérico ao mais específico.
+    </p>
+    <pre>
+        <code>
+            &lt;style>
+                h1 {
+                    color:blue
+                }
+
+                h1#nomedaid {
+                    color: green
+                }
+
+                h1.nomedaclass {
+                    color: red
+                }
+            &lt;/style>
+        </code>
+    </pre>
 </body>
 </html>
