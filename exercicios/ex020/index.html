@@ -7,11 +7,26 @@
     <link rel="shortcut icon" href="my-favicon.ico" type="image/x-icon">
     <style>
         h1:hover {
-            background-color: yellow;
+            color: red;
         }
     </style>
 </head>
 <body>
-    <h1>Título</h1>
+    <h1>Pseudo-Class</h1>
+    <p>
+        As <em>Pseudo-Class</em> devem estar relacionadas a um elemento ou uma classe e elas dizem respeito ao estado de um elemento ou de uma classe. Veja o exemplo abaixo:
+    </p>
+    <pre>
+        <code>
+            &lt;style>
+                h1:hover {
+                    color: red;
+                }
+            &lt;/style>
+        </code>
+    </pre>
+    <p>
+        O sinal de : (dois pontos) é o que usamos para indicar uma pseudo-class. Escolhemos o estado "hover", mas há várias opções. "Hover" é a ação que o usuário deve tomar para que a pseudo-class funcione. Nesse caso, a ação é "passar o mouse por cima" e o que acontecerá está declarado logo abaixo, no caso, a cor da fonte do título h1 vai ficar vermelho.
+    </p>
 </body>
 </html>
