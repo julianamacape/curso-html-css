@@ -7,13 +7,8 @@
     <link rel="shortcut icon" href="my-favicon.ico" type="image/x-icon">
     <style>
         h2 {
-            width: 200px;
+            width: 180px;
             height: 40px;
-            background-color: green;
-            border: 5px solid yellow;
-            outline: 5px solid red;
-            padding: 8px;
-            margin: 8px;
         }
 
         h2:hover {
@@ -41,9 +36,20 @@
         #exemplo02:visited {
             color: white;
             background-color: black;
-            border-color: green;
-            outline-color: hotpink;
-            
+        }
+
+        #exemplo02:hover {
+            color: yellow;
+            background-color: black;
+        }
+
+        #exemplo02:focus {
+            outline-color: springgreen;
+        }
+
+        #exemplo02:active {
+            color: black;
+            background-color: white;
         }
     </style>
 </head>
@@ -63,10 +69,10 @@
         </code>
     </pre>
     <p>
-        O sinal de : (dois pontos) é o que usamos para indicar uma pseudo-class. Escolhemos o estado "hover", mas há várias opções. "Hover" é a ação que o usuário deve tomar para que a pseudo-class funcione. Nesse caso, a ação é "passar o mouse por cima" e o que acontecerá está declarado logo abaixo, no caso, a cor da fonte do título h2 vai ficar vermelho.
+        O sinal de : (dois pontos) é o que usamos para indicar uma pseudo-class. Escolhemos o estado "hover", mas há várias opções. "Hover" é a ação que o usuário deve tomar para que a pseudo-class funcione. Nesse caso, a ação é "passar o mouse por cima" e o que acontecerá está declarado logo abaixo, no caso, a cor da fonte do título h2 vai ficar vermelho. Passe o mouse por cima do sub-título "Pseudo-Class" e veja o que acontece.
     </p>
     <p>
-        Vamos testar agora outras 2 pseudo-classes: 'active' e 'visited'. Utilizaremos a tag &lt;a> para exemplificar. <a href="https://www.estudonauta.com/" rel="dofollow" target="_blank">Clique aqui</a> para visitar o site do Estudonauta e confira os cursos na área de tecnologia disponíveis por lá. 
+        Vamos testar agora outra pseudo-class bastante comum em links: 'visited'. Utilizaremos a tag &lt;a> para exemplificar. <a href="https://www.estudonauta.com/" rel="dofollow" target="_blank">Clique aqui</a> para visitar o site do Estudonauta e confira os cursos na área de tecnologia disponíveis por lá. 
     </p>
     <p>
         Por padrão, a formatação de um link fica na cor roxa e sublinhada, como você pode ver nas palavras 'Clique aqui'. Podemos anular essa formatação e, usando uma pseudo-class, definir o que acontecerá quando inserirmos um link no nosso documento html. Veja o exemplo abaixo:
@@ -75,7 +81,7 @@
         <a id="exemplo01" href="https://www.youtube.com/channel/UCrWvhVmt0Qac3HgsjQK62FQ" rel="dofollow" target="_blank">Acesse</a> o canal do Curso em Vídeo no YouTube.
     </p>
     <p>
-        Removemos o sublinhado utilizando em CSS a configuração 'text-decoration'
+        Perceba que removemos o sublinhado utilizando em CSS a configuração 'text-decoration'
     </p>
     <pre>
         <code>
