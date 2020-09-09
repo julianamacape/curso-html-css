@@ -3,30 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pseudo-Class</title>
+    <title>Seletores Personalizados</title>
     <link rel="shortcut icon" href="my-favicon.ico" type="image/x-icon">
     <style>
-        h1:hover {
+        h2:hover {
             color: red;
+            font-size: xx-large;
+            font-weight: bolder;
+            font-style: italic;
+        }
+
+        #exemplo {
+            text-decoration: none;
+            
+        }
+
+        #exemplo:visited {
+            color: red;
+            background-color: black;
+            font-size: xx-large;
+            font-weight: bolder;
+            font-style: italic;
         }
     </style>
 </head>
 <body>
-    <h1>Pseudo-Class</h1>
+    <h1>Pseudo-Class e Pseudo-Element</h1>
+    <h2>Pseudo-Class</h2>
     <p>
-        As <em>Pseudo-Class</em> devem estar relacionadas a um elemento ou uma classe e elas dizem respeito ao estado de um elemento ou de uma classe. Veja o exemplo abaixo:
+        As <em>Pseudo-Class</em> devem estar relacionadas a um elemento ou uma classe e elas dizem respeito <strong>ao estado de um elemento ou de uma classe</strong>. Veja o exemplo abaixo:
     </p>
     <pre>
         <code>
             &lt;style>
-                h1:hover {
+                h2:hover {
                     color: red;
                 }
             &lt;/style>
         </code>
     </pre>
     <p>
-        O sinal de : (dois pontos) é o que usamos para indicar uma pseudo-class. Escolhemos o estado "hover", mas há várias opções. "Hover" é a ação que o usuário deve tomar para que a pseudo-class funcione. Nesse caso, a ação é "passar o mouse por cima" e o que acontecerá está declarado logo abaixo, no caso, a cor da fonte do título h1 vai ficar vermelho.
+        O sinal de : (dois pontos) é o que usamos para indicar uma pseudo-class. Escolhemos o estado "hover", mas há várias opções. "Hover" é a ação que o usuário deve tomar para que a pseudo-class funcione. Nesse caso, a ação é "passar o mouse por cima" e o que acontecerá está declarado logo abaixo, no caso, a cor da fonte do título h2 vai ficar vermelho.
+    </p>
+    <p>
+        Vamos testar agora outras 2 pseudo-classes: 'active' e 'visited'. Utilizaremos a tag &lt;a> para exemplificar. <a href="https://www.estudonauta.com/" rel="dofollow" target="_blank">Clique aqui</a> para visitar o site do Estudonauta e confira os cursos na área de tecnologia disponíveis por lá. 
+    </p>
+    <p>
+        Por padrão, a formatação de um link fica na cor roxa e sublinhada, como você pode ver nas palavras 'Clique aqui'. Podemos anular essa formatação e, usando uma pseudo-class, definir o que acontecerá quando inserirmos um link no nosso documento html. Veja o exemplo abaixo:
+    </p>
+    <p>
+        <a id="exemplo" href="https://www.youtube.com/channel/UCrWvhVmt0Qac3HgsjQK62FQ" rel="dofollow" target="_blank">Acesse</a> o canal do Curso em Vídeo no YouTube.
+    </p>
+    <p>
+        Removemos o sublinhado utilizando em CSS a configuração 'text-decoration'
+    </p>
+    <pre>
+        <code>
+            &lt;style>
+                a {
+                    text-decoration: none;
+                }
+            &lt;/style>
+        </code>
+    </pre>
+    <h3>Visited</h3>
+    <p>
+        Para um link que já foi visitado anteriormente pelo usuário, vamos definir que ele vai ficar na cor vermelha e em itálico. Veja abaixo:
+    </p>
+    <p>
+        <a id="exemplo" href="https://www.youtube.com/channel/UCrWvhVmt0Qac3HgsjQK62FQ" rel="dofollow" target="_blank">Acesse</a> o canal do Curso em Vídeo no YouTube.
     </p>
 </body>
 </html>
