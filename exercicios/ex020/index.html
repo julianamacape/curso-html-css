@@ -6,6 +6,16 @@
     <title>Seletores Personalizados</title>
     <link rel="shortcut icon" href="my-favicon.ico" type="image/x-icon">
     <style>
+        h2 {
+            width: 200px;
+            height: 40px;
+            background-color: green;
+            border: 5px solid yellow;
+            outline: 5px solid red;
+            padding: 8px;
+            margin: 8px;
+        }
+
         h2:hover {
             color: red;
             font-size: xx-large;
@@ -13,17 +23,27 @@
             font-style: italic;
         }
 
-        #exemplo {
+        #exemplo01 {
             text-decoration: none;
-            
         }
 
-        #exemplo:visited {
-            color: red;
+        #exemplo02 {
+            text-decoration: none;
+        }
+
+        #exemplo02:link {
+            color: blue;
+            background-color: brown;
+            border-color: green;
+            outline-color: orange
+        }
+
+        #exemplo02:visited {
+            color: white;
             background-color: black;
-            font-size: xx-large;
-            font-weight: bolder;
-            font-style: italic;
+            border-color: green;
+            outline-color: hotpink;
+            
         }
     </style>
 </head>
@@ -52,7 +72,7 @@
         Por padrão, a formatação de um link fica na cor roxa e sublinhada, como você pode ver nas palavras 'Clique aqui'. Podemos anular essa formatação e, usando uma pseudo-class, definir o que acontecerá quando inserirmos um link no nosso documento html. Veja o exemplo abaixo:
     </p>
     <p>
-        <a id="exemplo" href="https://www.youtube.com/channel/UCrWvhVmt0Qac3HgsjQK62FQ" rel="dofollow" target="_blank">Acesse</a> o canal do Curso em Vídeo no YouTube.
+        <a id="exemplo01" href="https://www.youtube.com/channel/UCrWvhVmt0Qac3HgsjQK62FQ" rel="dofollow" target="_blank">Acesse</a> o canal do Curso em Vídeo no YouTube.
     </p>
     <p>
         Removemos o sublinhado utilizando em CSS a configuração 'text-decoration'
@@ -68,10 +88,34 @@
     </pre>
     <h3>Visited</h3>
     <p>
-        Para um link que já foi visitado anteriormente pelo usuário, vamos definir que ele vai ficar na cor vermelha e em itálico. Veja abaixo:
+        Para um link que já foi visitado anteriormente pelo usuário, vamos definir que ele vai ficar na cor branca com fundo preto. Veja abaixo:
     </p>
     <p>
-        <a id="exemplo" href="https://www.youtube.com/channel/UCrWvhVmt0Qac3HgsjQK62FQ" rel="dofollow" target="_blank">Acesse</a> o canal do Curso em Vídeo no YouTube.
+        <a id="exemplo02" href="https://www.youtube.com/channel/UCrWvhVmt0Qac3HgsjQK62FQ" rel="dofollow" target="_blank">Acesse</a> o canal do Curso em Vídeo no YouTube.
+    </p>
+    <p>
+        Para que o :visited funcione, é preciso que sejam declaradas as configurações em :link (que diz respeito ao site NÃO visitado ainda) também. Veja abaixo o exemplo:
+    </p>
+    <pre>
+        <code>
+            a:link {
+                color: blue;
+                background-color: brown;
+                border-color: green;
+                outline-color: orange
+            }
+
+            a:visited {
+                color: white;
+                background-color: black;
+                border-color: green;
+                outline-color: hotpink;
+                
+            }
+        </code>
+    </pre>
+    <p>
+        Clique <a href="pseudolinks.html" rel="next">aqui</a> e veja um resumo dos pseudo-classes aplicados à tag &lt;a>.
     </p>
 </body>
 </html>
