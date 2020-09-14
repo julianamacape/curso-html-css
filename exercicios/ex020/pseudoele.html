@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletores Personalizados</title>
+    <link rel="shortcut icon" href="my-favicon.ico" type="image/x-icon">
+    <style>
+        a::after {
+            content: '[LINK]';
+        }
+
+        a::before {
+            content: 'Acesse';
+        }
+    </style>
+</head>
+<body>
+    <h1>Pseudo-Class e Pseudo-Element</h1>
+    <h2>Pseudo-Element</h2>
+    <p>
+        O pseudo-element mexe no conteúdo periférico do elemento. O símbolo do pseudo-element é :: <br> Como exemplo, vamos utilizar a configuração "::after" (depois do elemento) e "::before" (antes do elemento). Lá em CSS fica assim:
+    </p>
+    <pre>
+        <code>
+            &lt;>style>
+                a::after {
+                    content: '[LINK]';
+                }
+        
+                a::before {
+                    content: 'Acesse';
+                }
+            &lt;/style>
+        </code>
+    </pre>
+    <p>
+        O que isso quer dizer é que <strong>antes</strong> de todo link haverá o conteúdo 'Acesse' e que <strong>depois</strong> de todo link haverá o conteúdo '[LINK]'.
+    </p>
+    <p>
+        <a href="https://www.netflix.com/browse"> Netflix</a> <br> <a href="https://open.spotify.com/"> Spotify Web Player</a> <br> <a href="https://www.youtube.com/"> Youtube</a>
+    </p>
+    <p>
+        <a href="index.html" rel="prev">Voltar</a> para a página principal.
+    </p>
+</body>
+</html>
