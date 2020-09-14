@@ -33,5 +33,38 @@
         <li>Elementos <a href="block.html" rel="next">Block-level</a></li>
         <li>Elementos <a href="inline.html" rel="next">Inline-level</a></li>
     </ul>
+    </p>
+    <h2>Definindo dimensões da caixa</h2>
+    <p>
+        Ao definir os valores de "padding", "border" e "margin", você começa de cima (top) e vai no sentido <strong>horário</strong> definindo os demais lados (ou seja, segue para <em>right</em>, <em>bottom</em> e, por fim, <em>left</em>). A unidade de medida deve ser 'px', mas pode utilizar 'auto' o que significa que ficará centralizado.
+    </p>
+    <h2>Shorthand</h2>
+    <p>
+        Se tratando de "border" e "outline", a ordem correta é <strong>width style color</strong>. Exemplo: <br> border: 10px solid yellow;
+    </p>
+    <p>
+        Se tratando  de "padding" e "margin", a ordem correta é <strong>top right bottom left</strong>. Exemplo: <br> padding: 30px auto 100px auto;
+    </p>
+    <h2>Forçando elementos</h2>
+    <p>É possível forçar que um elemento "block-level" seja "inline-level" ou vice-versa. Exemplo: 
+    </p>
+    <pre>
+        <code>
+            &lt;style>
+                h1 {
+                    display:inline
+                }
+            &lt;/style>
+        </code>
+    </pre>
+    <pre>
+        <code>
+            &lt;style>
+                a {
+                    display: block;
+                }
+            &lt;/style>
+        </code>
+    </pre>
 </body>
 </html>
