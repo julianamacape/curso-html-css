@@ -120,6 +120,34 @@
     </code>
 </pre>
     <p>
+        É importante mencionar que ao usar <em>grouping tags</em> os elementos são submetidos a uma hierarquia. Veja abaixo esses 3 exemplos de títulos &lt;h1> :
+    </p>
+    <main>
+        <h1>> Children</h1>
+        <section>
+            <h1>> Children</h1>
+            <article>
+                <h1>> Children</h1>
+            </article>
+        </section>
+    </main>
+    <p>
+        Sim, são 3 títulos do tipo &lt;h1>. Dentro da tag &lt;article> o título &lt;h1> assume uma formatação de &lt;h3>. Já dentro da tag &lt;section>, o título &lt;h1> assume formatação de &lt;h2>. Finalmente, dentro da tag &lt;main> é que o título &lt;h1> assume sua formatação original. Veja o código html abaixo:
+    </p>
+    <pre>
+        <code>
+            &lt;main>
+                &lt;h1>> Children&lt;/h1>
+                &lt;section>
+                    &lt;h1>> Children&lt;/h1>
+                    &lt;article>
+                        &lt;h1>> Children&lt;/h1>
+                    &lt;/article>
+                &lt;/section>
+            &lt;/main>
+        </code>
+    </pre>
+    <p>
         Voltar para a <a href="index.html" rel="prev">página anterior.</a>        
     </p>
 </body>
