@@ -5,9 +5,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Modelo de Caixas</title>
     <link rel="shortcut icon" href="my-favicon.ico" type="image/x-icon">
+    <style>
+        section > h1 {
+            background-color: rgba(210, 105, 30, 0.397);
+        }
+    </style>
 </head>
 <body>
-    
+    <main>
+        <h1>> Children</h1>
+        <section>
+            <article>
+                <p>
+                    Uma dica sobre a propriedade '> children'. Ela funciona como o conceito de 'contido em'. Veja o código abaixo:
+                    <pre>
+                        <code>
+                            &lt;main>
+                                &lt;h1>Título&lt;/h1>
+                                &lt;section>
+                                    &lt;h1>Título&lt;/h1>
+                                    &lt;article>
+                                        &lt;p>
+                                            Bla bla bla....
+                                        &lt;/p>
+                                    &lt;/article>
+                                &lt;/section>
+                            &lt;/main>
+                        </code>
+                    </pre>
+                    Agora veja o que foi definido na tag &lt;style> e veja o resultado em seguida:
+                    <pre>
+                        <code>
+                            &lt;style>
+                                section > h1 {
+                                    background-color: rgba(210, 105, 30, 0.397);
+                                }
+                            &lt;/style>
+                        </code>
+                    </pre>
+                </p>
+                <main>
+                    <h1>Título</h1>
+                    <section>
+                        <h1>Título</h1>
+                        <article>
+                            <p>
+                                Bla bla bla....
+                            </p>
+                        </article>
+                    </section>
+                </main>
+                <p>
+                    Ou seja, o que ficou definido em CSS foi que todo &lt;h1> <em>contido</em> na tag &lt;section> teria backgound-color diferente. O outro título também é do tipo &lt;h1>, mas como não tem nenhuma configuração para os títulos &lt;h1> "gerais", então ele fica normal. 
+                </p>
+            </article>
+        </section>
+    </main>
     <p>
         Voltar para a <a href="index.html" rel="prev">página anterior.</a>
     </p>
