@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bordas com Imagens</title>
+    <link rel="shortcut icon" href="my-favicon.ico" type="image/x-icon">
+    <style>
+        h1 {
+            border: 12px solid black;
+            padding: 8px;
+            border-image-source: url('pattern.jpg');
+            border-image-slice: 10;
+            border-image-repeat: repeat;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bordas com Imagens</h1>
+    </header>
+    <main>
+        <article>
+            <p>
+                Veja o código abaixo:
+<pre>
+    <code>
+        &lt;style>
+            h1 {
+                border: 12px solid black;
+                padding: 8px;
+                border-image-source: url('pattern.jpg');
+                border-image-slice: 10;
+                border-image-repeat: repeat;
+            }
+        &lt;/style>
+    </code>
+</pre>
+                O '<em>border-image-repeat:</em>' tem algumas opções: <br>
+                <ul>
+                    <li>repeat;</li>
+                    <li>round;</li>
+                    <li>space;</li>
+                    <li>stretch;</li>
+                </ul>
+                É possível utilizar uma 'shorthand' para definir os atributos da borda com imagens. A ordem é: <br>
+                <ol>
+                    <li>source</li>
+                    <li>slice</li>
+                    <li>repeate</li>
+                </ol>
+<pre>
+    <code>
+        &lt;style>
+            h1 {
+                border-image: url('filename.jpg') 12 stretch
+            }
+        &lt;/style>
+    </code>
+</pre>
+            </p>
+        </article>
+    </main>
+</body>
+</html>
