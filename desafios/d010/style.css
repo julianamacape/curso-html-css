@@ -1,6 +1,6 @@
 @charset "UTF-8";
 body {
-    font-family: sans-serif;
+    font-family: sans-serif;  
 }
 
 header {
@@ -30,6 +30,28 @@ nav > a {
     text-align: left;
     text-decoration: none;
     color: white;
-    padding-right: 5px;
-    padding-left: 5px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+main {
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+main > h1 {
+    padding-top: 20px;
+    padding-left: 25px;
+}
+
+.mainsubtitles {
+    margin-left: 25px;
+    background-image: linear-gradient(to right, rgba(118, 223, 118, 0.534), white);
+}
+.paragraph {
+    text-indent: 20px;
+    text-align: justify;
+    padding-left: 25px;
+    padding-right: 25px;
 }
