@@ -42,7 +42,8 @@ nav > a {
 }
 
 main {
-    width: 900px;
+    background-color: gray;
+    width: 800px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -63,6 +64,11 @@ main > h1 {
     text-align: justify;
     padding-left: 25px;
     padding-right: 25px;
+}
+
+#image {
+    display: block;
+    vertical-align: middle;
 }
 
 #asidesubtitle {
