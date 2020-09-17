@@ -1,4 +1,10 @@
 @charset "UTF-8";
+
+@font-face {
+    font-family: 'Android';
+    src: url('idroid.otf') format('opentype'); 
+}
+
 body {
     font-family: sans-serif;  
 }
@@ -7,17 +13,18 @@ header {
     background-image: linear-gradient(to top, rgb(2, 59, 2), rgb(121, 216, 121));
     padding-bottom: 8px;
     padding-left: 8px;
+    box-shadow: 2px 2px 4px #000000ab ;
 }
 
-header > h1 {
-    font-family: 'Arial Narrow', 'Franklin Gothic Medium' , Arial, sans-serif;
+#tituloheader {
     color: white;
     text-shadow: 2px 2px 2px #000000ab;
     padding: 15px;
     text-align: center;
+    font-family: 'Arial Narrow', 'Franklin Gothic Medium' , Arial, sans-serif;
 }
 
-header > section > p {
+#paragheader {
     color: rgb(218, 211, 211);
     text-shadow: 2px 2px 2px #000000ab;
     padding-right: 200px;
@@ -43,13 +50,22 @@ main {
 main > h1 {
     padding-top: 20px;
     padding-left: 25px;
+    font-family: 'Android', Arial, Helvetica, sans-serif;
 }
 
 .mainsubtitles {
     margin-left: 25px;
     background-image: linear-gradient(to right, rgba(118, 223, 118, 0.534), white);
+    font-family: 'Android', Arial, Helvetica, sans-serif;
 }
 .paragraph {
+    text-indent: 20px;
+    text-align: justify;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+#asidesubtitle {
     text-indent: 20px;
     text-align: justify;
     padding-left: 25px;
