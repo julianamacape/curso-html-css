@@ -4,7 +4,7 @@
 
 @font-face {
     font-family: 'Android';
-    src: url('../desafios/d010-02/fontes/idroid.otf') format('opentype');
+    src: url('fontes/idroid.otf') format('opentype');
     font-weight: normal;
 }
 
@@ -14,8 +14,8 @@
 }
 
 :root {
- --color0:#1A5C37;
- --color1:#2C9C5E;
+ --color0:#0a2c19;
+ --color1:#1A5C37;
  --colo2:#36C275;
  --color3:#3EDB84;
  --color4:#41E88C;
@@ -35,9 +35,25 @@ body {
     font-family: var(--fontdefault);
 }
 
+header {
+    background-color: var(--color1);
+}
+
+nav {
+    background-color: var(--color0);
+}
+
+main {
+    background-color: white;
+}
+
 header > h1 {
-    color: var(--color0);
+    color: white;
     font-family: var(--fonthighlight);
+}
+
+header > p {
+    color: white;
 }
 
 main h1 {
@@ -47,4 +63,9 @@ main h1 {
 
 main h2 {
     font-family: var(--fontandroid);
+}
+
+footer {
+    background-color: var(--color0);
+    color: white;
 }
