@@ -4,8 +4,13 @@
 
 @font-face {
     font-family: 'Android';
-    src: url('fontes/idroid.otf') format('opentype');
+    src: url('../desafios/d010-02/fontes/idroid.otf') format('opentype');
     font-weight: normal;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
 }
 
 :root {
@@ -21,14 +26,25 @@
  --fontandroid: 'Android', cursive;
 }
 
+main a::after {
+    content:' 🔗';
+}
+
 body {
     background-color: var(--color5);
+    font-family: var(--fontdefault);
 }
 
 header > h1 {
     color: var(--color0);
+    font-family: var(--fonthighlight);
 }
 
 main h1 {
     color: var(--color0);
+    font-family: var(--fontandroid);
+}
+
+main h2 {
+    font-family: var(--fontandroid);
 }
