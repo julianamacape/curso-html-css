@@ -26,10 +26,6 @@
  --fontandroid: 'Android', cursive;
 }
 
-main a::after {
-    content:' 🔗';
-}
-
 body {
     background-color: var(--color5);
     font-family: var(--fontdefault);
@@ -45,6 +41,9 @@ nav {
 
 main {
     background-color: white;
+    margin: auto;
+    max-width: 800px;
+    min-width: 450px;
 }
 
 header > h1 {
@@ -63,6 +62,24 @@ main h1 {
 
 main h2 {
     font-family: var(--fontandroid);
+}
+
+main a::after {
+    content:' 🔗';
+}
+
+main img {
+    width: 100%;
+}
+
+#small {
+    width: 50%;
+    margin: auto;
+    display: block;
+}
+
+main iframe {
+    width: 100%;
 }
 
 footer {
