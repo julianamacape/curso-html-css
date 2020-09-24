@@ -44,6 +44,7 @@ header > h1 {
     margin-bottom: 20px;
     font-size: 3em;
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.466);
+    font-weight: normal;
 }
 
 header > p {
@@ -92,6 +93,7 @@ main {
 main h1 {
     color: var(--color0);
     font-family: var(--fontandroid);
+    font-weight: normal;
 }
 
 main h2 {
@@ -101,6 +103,7 @@ main h2 {
     background-image: linear-gradient(to right, var(--color4), transparent);
     padding: 2px;
     padding-left: 5px;
+    font-weight: normal;
 }
 
 main p {
@@ -145,7 +148,50 @@ main iframe {
     width: 100%;
 }
 
+div {
+    background-color: var(--color1);
+    padding: 30px;
+    margin: 10px 10px 10px 10px;
+}
+
+aside {
+    background-color: var(--color4);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 9px rgba(0, 0, 0, 0.308);
+
+}
+
+aside h3 {
+    background-color: var(--color0);
+    color: white;
+    padding: 10px;
+    border-radius: 10px 10px 0px 0px;
+    margin: -10px -10px 0px -10px;
+
+}
+
+aside ul {
+    list-style-position: inside;
+    list-style-type: '\2714\00a0\00a0';
+    columns: 2;
+}
+
 footer {
     background-color: var(--color0);
     color: white;
+    text-align: center;
+    font-size: .8em;
+    padding: 5px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: var(--color5);
 }
