@@ -5,12 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        #static {
-            margin-left: 125px;
-        }
+        
         .parent {
             border: 2px dotted black;
             display: inline-block;
+            position: relative;
         }
 
         .box {
@@ -40,7 +39,7 @@
     </style>
 </head>
 <body>
-    <h2 id="static">position: static</h2>
+    <h2>position: static</h2>
     <div class="parent">
         <div class="box" id="one">ONE</div>
         <div class="box" id="two">TWO</div>
@@ -56,7 +55,7 @@
         <div class="box" id="four">FOUR</div>
     </div>
     <h2>position: absolute</h2>
-    <p>The position of the yellow box is based on its parent position (the dotted border). Thus, moving 20px to the left and bottom from the top-left origin of the dotted border.</p>
+    <p>The positioning is done relative to the first relatively (or absolutely) positioned parent element. The first parent element MUST HAVE the 'position' attribute set in CSS, or things will get all messed up. So, in the case when there is no positioned parent element, it will be positioned related directly to the HTML element (the page itself). The position of the yellow box is now based on its parent position (the dotted border). Thus, moving 20px to the right and bottom from the top-left origin of the dotted border.</p>
     <div class="parent">
         <div class="box" id="one">ONE</div>
         <div class="box" id="twoabs">TWO</div>
