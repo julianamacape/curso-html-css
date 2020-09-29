@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #static {
+            margin-left: 125px;
+        }
+        .parent {
+            border: 2px dotted black;
+            display: inline-block;
+        }
+
+        .box {
+            display: inline-block;
+            background-color: red;
+            width: 100px;
+            height: 100px;
+        }
+
+        #two {
+            background-color: gold;
+        }
+
+        #tworel {
+            background-color: gold;
+            position: relative;
+            left: 20px;
+            top: 20px;
+        }
+
+        #twoabs {
+            background-color: gold;
+            position: absolute;
+            left: 20px;
+            top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h2 id="static">position: static</h2>
+    <div class="parent">
+        <div class="box" id="one">ONE</div>
+        <div class="box" id="two">TWO</div>
+        <div class="box" id="three">THREE</div>
+        <div class="box" id="four">FOUR</div>
+    </div>
+    <h2>position: relative</h2>
+    <p>I moved the yellow box relative to its current position by 20px from the left and top without changing the layout around it. When you set the position relative to an element, without adding any other positioning attributes (top, bottom, right, left) nothing will happen. When you add an additional position, such as 'left: 20px;' the element will move 20px to the right and if you add 'top: 20px;' the element will move 20px down from its normal position. Here, you can see that this element is relative to itself. When the element moves, no other element on the layout will be affected.</p>
+    <div class="parent">
+        <div class="box" id="one">ONE</div>
+        <div class="box" id="tworel">TWO</div>
+        <div class="box" id="three">THREE</div>
+        <div class="box" id="four">FOUR</div>
+    </div>
+    <h2>position: absolute</h2>
+    <p>The position of the yellow box is based on its parent position (the dotted border). Thus, moving 20px to the left and bottom from the top-left origin of the dotted border.</p>
+    <div class="parent">
+        <div class="box" id="one">ONE</div>
+        <div class="box" id="twoabs">TWO</div>
+        <div class="box" id="three">THREE</div>
+        <div class="box" id="four">FOUR</div>
+    </div>
+</body>
+</html>
